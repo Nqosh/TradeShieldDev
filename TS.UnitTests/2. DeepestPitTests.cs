@@ -13,4 +13,13 @@ public class DeepestPitTests
 
         Assert.AreEqual(4, result);
     }
+
+    [TestMethod]
+    public void Q2_RepeatingPattern_Returns2()
+    {
+        int[] points = new[] { 1, 2, 3, 1, 2, 3, 1, 2, 3 };
+        int result = DeepestPitAnswer.Solution(points);
+        Assert.AreEqual(2, result);
+    }
+
 }
